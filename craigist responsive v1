@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+<!-- 		<meta name="viewport"        content="width=device-width"> -->
+		<title>Craigist Responsive Assignment</title>  
+      <style>
+          @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+}
+/* h1{
+  top:40%;
+  text-align: center;
+  color:darkblue;
+} */
+/* .left{
+    float: left;
+} */
+.right{
+    right:0px;
+}
+.topnav {
+    background-color:darkblue;
+    overflow: hidden;
+    /* position: fixed; 
+    top: 0; 
+    width: 100%;  */
+   
+    /* opacity: 0.9; */
+  }
+  
+  .topnav a {
+/*     display: flex;
+    justify-content: space-around;
+    align-items: flex-start; */
+    color: white;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 17.4%;
+    
+  }
+  
+  
+  .topnav a:hover {
+    background-color: white;
+    color: darkblue;
+  }
+  
+ 
+  .topnav a.active {
+    background-color: white;
+    color: rgb(27, 16, 129);
+  }
+
+
+@media screen and (max-width: 600px) {
+.topnav a {
+    float: none;
+    width: 100%;
+
+}
+.container {
+  position: relative;
+ 
+}
+
+.center {
+  position: absolute;
+  top: 31%;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 2px 4px darkblue;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 1.5px solid darkblue;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  position:relative;
+  opacity: 0.5;
+  box-shadow: darkblue;
+
+}
+
+.searchTerm:focus{
+  color: darkblue;
+  
+  
+}
+
+.searchButton {
+  position:absolute;
+  width: 150px;
+  height: 54px;
+  left:430px;
+  border: 1px solid darkblue;
+  background: darkblue;
+  text-align: center;
+  color:white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 40%;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.gallery {
+  margin-left: 80px;
+  padding: 5px;
+  float: left;
+  border: 1px solid rgb(146, 146, 219);
+  border-radius: 80px;
+
+}
+
+/* .icon{
+  display: flex;
+  flex-direction: column ;
+  justify-content:center;
+  gap: 30px 30px;
+  width: 200px;
+} */
+
+div.gallery:hover {
+  border: 1px solid darkblue;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar2 {
+  background-color: rgb(255, 223, 153);
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.navbar2 a {
+  float: left;
+  display: block;
+  color: darkblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 30%;
+}
+
+.navbar a:hover {
+  background-color: rgb(255, 223, 153);
+  color:darkblue;
+}
+
+
+      </style> 
+    </head>
+<body>
+ <div class="topnav">
+        <!-- <a class="active" href="#home" >Craigist</a> -->
+        <a href="#news" class="left">News</a>
+        <a href="#contact" class="left">Contact</a>
+        <a href="#about" class="left">About</a>
+        <a  href="#post"class="top" class="right">Creating a post</a>
+        <a  href="#login"class="top" class="right">Log in/Sign up</a>
+      </div>
+ 
+  <!-- <h1 class="p1">Welcome to Craigist!</h1> -->
+  <div class="container">
+  <img src="bg craigist.jpg" alt="Cinque Terre" width="1000" height="300">
+  <div class="center">Welcome to Craigist!</div>
+</div>
+ <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Type in a key word...">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search">search</i>
+     </button>
+   </div>
+</div>
+  <div class="gallery">
+    <div class="desc">for sale</div>
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="icon 1.png" alt="Cinque Terre" width="300" height="300" class = "icon">
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <div class="desc">job</div>
+  <a target="_blank" href="img_forest.jpg">
+    <img src="icon 2.png" alt="Forest" width="300" height="300" class = "icon">
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <div class="desc">housing</div>
+  <a target="_blank" href="img_lights.jpg">
+    <img src="icon 3.png" alt="Northern Lights" width="300" height="300" class = "icon">
+  </a>
+ 
+</div>
+
+<div class="gallery">
+  <div class="desc">community</div>
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="icon 4.png" alt="Mountains" width="300" height="300" class = "icon"> 
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <div class="desc">discussion forum</div>
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="icon 5.png" alt="Mountains" width="300" height="300" class = "icon">
+  </a>
+  
+</div>
+
+<div class="navbar2">
+  <a href="#home" class="active">Terms of use</a>
+  <a href="#news">Privacy policy</a>
+  <a href="#contact">Help & Contact</a>
+</div>
+  </body>
