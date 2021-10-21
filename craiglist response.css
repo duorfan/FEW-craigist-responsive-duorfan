@@ -1,12 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body{
     background: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Times New Roman", Times, serif;
   }
   
-  .right{
-      right:0px;
-  }
   .topnav {
       background-color:darkblue;
       overflow: hidden;
@@ -36,6 +33,10 @@ body{
       background-color: white;
       color: rgb(27, 16, 129);
   }
+
+  .topnav-right{
+    float:right;
+}
   
   .container {
     position: relative;
@@ -106,28 +107,48 @@ body{
     transform: translate(-50%, -50%);
   }
   
-  div.gallery {
-    margin-left: 80px;
-    padding: 5px;
-    float: left;
-    border: 1px solid rgb(146, 146, 219);
-    border-radius: 80px;
-  
-  }
-  
-  div.gallery:hover {
-    border: 1px solid darkblue;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+
+.icons{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconContainer {
+  position: relative;
+  width: 18%;
+  max-width: 20%;
+
+}
+
+.icon {
+  display: block;
+  width: 70%;
+  padding:15%;
+  padding-top: 30%;
+  height: auto;
+  left:50%;
+}
+
+.overlay {
+  position: absolute; 
+  top: 0; 
+  background: rgb(16, 5, 73);
+  background: rgba(7, 4, 104, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.iconContainer:hover .overlay {
+  opacity: 1;
+}
+
   
   .navbar2 {
     background-color: rgb(255, 223, 153);
